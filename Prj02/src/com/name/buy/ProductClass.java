@@ -7,6 +7,7 @@ public class ProductClass {
 	int price;//상품 가격
 	int count;
 	
+	
 	ProductClass(int id, String name, int price, int count){
 		this.id=id;
 		this.name=name;
@@ -25,4 +26,14 @@ public class ProductClass {
 	}
 	
 	
+	
+	 
+	void purchase() {
+		
+	}
+	
+	
 }
+
+
+
