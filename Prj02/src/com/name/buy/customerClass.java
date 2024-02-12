@@ -29,7 +29,6 @@ public class customerClass {
 	
 	public void addToCart(ProductClass product, int count, int index) {
 		
-		
 		if(product.count<count) {
 			System.out.println("못산다");
 			
@@ -39,11 +38,14 @@ public class customerClass {
 		}
 		
 		Basket[index] = product;//바스켓
-		
-		
-		
+
 	}
 	
+	
+	public void addCart (String Pname, int count) {
+		//새우깡을 20개 담았다
+		for (int i=0; i<procu)
+	}
 	
 	
 }
