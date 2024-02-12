@@ -1,4 +1,4 @@
-package com.name.buy;
+package product;
 
 public class customerClass {
 //회원 생성
@@ -34,7 +34,7 @@ public class customerClass {
 			
 		}else {
 			product.count -= count;
-			System.out.println(product.name+count+"개 들어간다");
+			System.out.println(product.Pname+count+"개 들어간다");
 		}
 		
 		Basket[index] = product;//바스켓
@@ -42,11 +42,27 @@ public class customerClass {
 	}
 	
 	
-	public void addCart (String Pname, int count) {
-		//새우깡을 20개 담았다
-		for (int i=0; i<procu)
+	public void addCart (ProductClass product, int count) {
+		
+		for(int i=0; i<Basket.length; i++) {
+
+			if (Basket[i] != null && product.count < count ) {
+		        System.out.println(product.Pname + "는 구매 불가(수량 부족)");
+		        return; // 메서드 종료
+		    }else if(Basket[i] == null) {
+                Basket[i] = product;
+                product.count -= count; // 상품 재고 감소
+        		System.out.println(product.Pname+count+"개 들어간다");
+        		break;
+			}
+		}
+	
 	}
 	
+	
+	public void purchase(ProductClass product, int count, int price) {
+		
+	}
 	
 }
 

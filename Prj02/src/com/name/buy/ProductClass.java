@@ -1,4 +1,4 @@
-package com.name.buy;
+package product;
 
 public class ProductClass {
 	//상품 생성

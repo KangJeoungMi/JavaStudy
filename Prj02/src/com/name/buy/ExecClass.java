@@ -1,4 +1,4 @@
-package com.name.buy;
+package product;
 
 public class ExecClass {
 	public static void main(String[] args) {
@@ -33,6 +33,11 @@ public class ExecClass {
 		c3.addToCart(p1, 20,0);
 		c3.addToCart(p2, 20,1);
 		c3.addToCart(p1, 90,3);
+		
+		c3.addCart(p1, 80);
+		c3.addCart(p1, 80);
+		c3.addCart(p2, 90);
+		
 		//4. 상품 구매 - 결재
 		//c3.purchase();
 		
