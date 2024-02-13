@@ -1,13 +1,12 @@
-package product;
+package com.name.buy;
 
 public class ExecClass {
 	public static void main(String[] args) {
 		//1.회원 등록
 		customerClass c1 = new customerClass(1,"홍길동",20);
-		//c1.name="홍길동";
 		customerClass c2 = new customerClass(2,"장보고",30);
-
-		customerClass c3 = new customerClass(2,"이몽룡",25);
+		//장바구니 생성도 하는 회원 등록
+		customerClass c3 = new customerClass(2,"이몽룡",25, new ProductClass[10]);
 		
 		c1.custominfo();
 		c2.custominfo();
@@ -35,12 +34,18 @@ public class ExecClass {
 		c3.addToCart(p1, 90,3);
 		
 		c3.addCart(p1, 80);
-		c3.addCart(p1, 80);
 		c3.addCart(p2, 90);
+		c3.addCart(p1, 80);
 		
+		System.out.println();
+		
+		c3.Cart(p4, 250);
+		c3.Cart(p4, 90);
+
 		//4. 상품 구매 - 결재
 		//c3.purchase();
 		
+		//문제 풀이
 		
 		
 	}

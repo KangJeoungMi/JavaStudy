@@ -1,4 +1,4 @@
-package product;
+package com.name.buy;
 
 public class ProductClass {
 	//상품 생성
@@ -20,11 +20,10 @@ public class ProductClass {
 	}
 	
 	
-	
-	 
-	void purchase() {
-		
-	}
+	 boolean checkQty(int purchaseQty) {
+	     return this.count >=  purchaseQty ? true : false;
+		 	
+	 }
 	
 	
 }

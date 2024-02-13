@@ -1,4 +1,4 @@
-package product;
+package com.name.buy;
 
 public class customerClass {
 //회원 생성
@@ -59,11 +59,24 @@ public class customerClass {
 		}
 	
 	}
-	
-	
-	public void purchase(ProductClass product, int count, int price) {
+	int purchaseIndex = 0;
+public void Cart (ProductClass product, int count) {
 		
+    boolean isOk = product.checkQty(count);
+		
+		if(!isOk) {
+			 System.out.printf("수량이 부족합니다. 구입가능한 수량은 %d입니다.\n", product.count);
+			 }else {
+			Basket[purchaseIndex] = product;
+			this.purchaseIndex++;
+			product.count -= count;
+			
+			System.out.printf("나이가 %d살인 %s가 %d원짜리 상품 %s를 %d개 장바구니에 담았습니다. \n", this.age, this.name, product.price, product.Pname,count);
+
+		}
+	
 	}
+
 	
 }
 
